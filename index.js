@@ -5,7 +5,10 @@ import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import listingRouter from "./routes/listing.route.js";
-
+app.use(cors({
+  origin: ['https://mern-estate-fronten.netlify.app/', 'http://localhost:5173'], // Allow multiple origins
+  credentials: true
+}));
 dotenv.config();
 
 const app = express();
