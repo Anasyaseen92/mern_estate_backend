@@ -35,7 +35,12 @@ app.use((err, req, res, next) => {
     message,
   });
 });
-
+app.get('/',(req,res)=>{
+  res.send({
+    activeStatus :true,
+    error: false
+  })
+})
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
