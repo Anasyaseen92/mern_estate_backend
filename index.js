@@ -14,7 +14,7 @@ const app = express();
 
 // ✅ Define `app` before using it
 app.use(cors({
-  origin: ['https://mern-estate-fronten.netlify.app', 'http://localhost:5173'],
+  origin: ['https://jocular-paprenjak-f890e8.netlify.app', 'http://localhost:5173'],
   credentials: true
 }));
 
